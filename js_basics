@@ -1,0 +1,124 @@
+//this is a comment //
+
+//about CONSOLEs //
+console.log("Hello World!")
+//prints a message//
+console.error("This an error message!")
+//prints a message in red//
+console.warn("This is a warning message!")
+//prints a message in yellow//
+
+//about VARIABLE creation//
+let name = "World"
+//syntax OK//
+let full name = "Hello World"
+//ng//
+let full-name = "Hello World"
+//ng//
+let 1full_name = "Hello World"
+//ng//
+let full_name = "Hello World"
+//syntax OK//
+let $full_name = "Hello World"
+//syntax OK//
+let fullname = "Hello World"
+//syntax OK//
+
+//receveing a new value in a var//
+let name = "World"
+name = "dlroW"
+console.log(name)
+  //prints "dlroW"//
+
+//about CONST creation//
+const pi = 3.14
+//but const cannot be changed, because it's a constant//
+
+
+
+//Types of DATAS//
+//First, string!//
+let firstname = "Hello"
+typeof firstname
+  //prints 'string'
+let lastname = "World"
+
+firstname + " " + lastname
+  /*prints 'Hello World'
+or, might use the following example:*/
+${firstname} ${lastname}
+//and it also will print 'Hello World'//
+
+//to count the amount of characters//
+firstname.length
+//prints '5'
+//to cut characters, use variablename.slice(initial,end)//
+firstname.slice(0,2)
+//prints 'He'//
+//to localize in which position the character is, use variablename.search(character)//
+firstname.search(e)
+//prints '1'... remebember it starts with 0-1-2-3...//
+
+
+
+//Second, boolean type: true or false//
+let a = true
+//prints 'true'//
+let b = false
+//prints 'false'//
+let b = a
+//prints 'true'//
+
+
+
+//Third, NUMBER type//
+let age = 31
+typeof age
+//prints 'number'//
+let height = 1.75
+typeof height
+//also prints 'number', but it's a float, so type the follow://
+Number.isInteger(height)
+//and it will print 'false'//
+
+//basic math//
+1+1 = 2
+1-1 = 0
+4/2 = 2
+4*2 = 8
+2**4 = 16
+4**(1/2) = 2
+10 % 3 = 1
+
+let height = "1.71"
+//the number inside is a string, to convert it, use the following//
+parseFloat(height)
+//it prints '1.71' without the ''//
+parInt(height)
+//it prints '1' without the '' and the .71, because now it is an integer//
+
+//what if we try to convert a character's string in an integer?//
+parseInt(firstname)
+//it'll return 'NaN', which stands for 'Not a Number'//
+
+
+
+//Forth, ARRAY type, array is a set of datas organized in indexes //
+//example://
+let webtechnologies = ["HTML", "CSS", "JavaScript"]
+//prints '["HTML", "CSS", "JavaScript"]'//
+webtechnologies.length
+//prints '3', being HTML 1, CSS 2 and JavaScript 3//
+//if want to print only one data, follows the example://
+webtechnologies[2]
+//prints 'CSS'//
+//if want to add a new value, follows the example://
+webtechnologies.push("jQuery")
+//now if we print it again, it'll return '["HTML", "CSS", "JavaScript", "jQuery"]' and a lenght of 4//
+
+//arrays are object type//
+typeof.webtechnologies
+//prints 'object'//
+
+
+
