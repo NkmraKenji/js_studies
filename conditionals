@@ -1,0 +1,64 @@
+10 > 5
+//prints 'true'
+10 < 5
+//prints 'false'
+10 == '10'
+//prints 'true'
+10 === 10
+//prints 'true', but the following... //
+10 === '10'
+//prints 'false'
+
+//&& stands for 'AND'//
+10 > 5 && 10 > 6
+//prints 'true', but...//
+10 > 5 && 10 > 20
+//prints 'false'//
+
+// || stands for 'OR'//
+10 > 5 || 10 > 6
+//prints 'true' and also...//
+10 > 5 || 10 > 20
+//prints 'true', but...//
+10 > 11 || 10 > 20
+//prints 'false'//
+
+//the exclamation sign '!' turns true to false and false to true//
+true == true //but, the following...//
+!true == false
+
+#################################################################
+//example of conditionals//
+
+  let age = prompt("How old are you?")
+  age = parseInt(age)
+
+  if (age >= 18) {
+    console.log("Permission allowed");
+  } else {
+    console.log("Permission denied");
+  }
+
+//another example of conditionals including a var which receives a true value//
+  let age = prompt("How old are you?")
+  age = parseInt(age)
+  accompanied == true
+
+  if (age >= 18) {
+    console.log("Permission allowed");
+  } else if (accompanied) {
+    console.log("Permission allowed, because is accompanied");
+  }
+    else {
+    console.log("Permission denied");
+  }
+
+
+#################################################################
+//example of ternary operator//
+
+let age = 0
+
+let may_come_in = age >= 18 ? true : false
+  //this syntax may be read as 'the variable may_come_in receives age, which if it's above 18, the var receives true, else, false//
+
