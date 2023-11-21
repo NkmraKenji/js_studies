@@ -1,0 +1,39 @@
+//working with arrays may not be convenient when working with lots of values being inserted in a array, so we may work with WHILE LOOPS to overcome it//
+
+//Basically we may use 3 types of WHILE LOOPS: FOR, WHILE and DO-WHILE//
+
+
+//FIRST, FOR//
+//It is way better and less consuming memory if we use the following example, than typing console.log for each value//
+let names = ["Mary", "John", "Peter"]
+
+for (let i = 0; i < names.lenght; i++) {
+  console.log("Name is: " + names[i])
+}
+/*and it'll print "Name is: Mary" and it so go on
+but it may be improved by the following example: */
+
+let names = ["Mary", "John", "Peter"]
+
+for (index in names) {
+  console.log("Name is: " + names[index])
+}
+
+//SECOND, WHILE//
+let names = ["Mary", "John", "Peter"]
+let count = 0
+
+while (count < names.lenght) {
+  console.log("Name is " + names[count]);
+  count ++
+}
+
+
+//THIRD, DO...WHILE//
+let names = ["Mary", "John", "Peter"]
+let count = 0
+
+do {
+  console.log("Name is " + names[count]);
+  count ++
+} while (count < names.lenght);
